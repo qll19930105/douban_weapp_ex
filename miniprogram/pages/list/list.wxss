@@ -1,0 +1,41 @@
+/* pages/list/list.wxss */
+.movielist{
+  padding:10rpx;
+  border-bottom:1px solid #eee;
+}
+.movie-item{
+  display: flex;
+  padding: 20rpx 40rpx;
+}
+.movie-img{
+  height:168rpx;
+  width: 128rpx;
+  margin-right:20rpx;
+}
+.center{
+  flex:1;
+}
+.center-title{
+  font-size: 32rpx;
+}
+.center-subtitle{
+  font-size: 22rpx;
+  color:#c0c0c0;
+  margin-bottom:15rpx;
+  display: block;
+}
+.center-directors{
+  font-size: 24rpx;
+  color: #999;
+}
+.rating text{
+  width:40rpx;
+  font-size:28rpx;
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  background:rgba(247, 76, 49, .8);
+  color:#fff;
+  padding: 10rpx;
+  border-radius: 20rpx;
+}

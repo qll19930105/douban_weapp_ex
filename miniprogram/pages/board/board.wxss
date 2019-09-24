@@ -1,0 +1,69 @@
+/* pages/board/board.wxss */
+
+/* 轮播图 */
+.slide swiper{
+  height:480rpx;
+}
+.slide swiper image{
+  height: 100%;
+  width:100%;
+}
+/* 轮播下的电影列表 */
+/*背景 */
+.board{
+  box-sizing: border-box;
+  background: #f8f9fb;
+}
+/* 每一个列表的设置 */
+.board-item{
+  display: flex;
+  flex-direction: column;
+  cursor:pointer;
+  font-size:20rpx;
+  margin:40rpx 0;
+  padding: 20rpx;
+  background: #fff;
+}
+/* 列表的标题栏 */
+.board-item .title{
+  display: flex;
+  margin-bottom:10rpx;
+  width:100%;
+}
+/* 列表的标题栏 左文字*/
+.board-item .title text{
+  flex: 1;
+}
+/* 列表的标题栏 右箭头图片*/
+.board-item .title image{
+  height:20rpx;
+  width:20rpx;
+}
+/* 电影列表 内容 */
+.board-item .content{
+  height:300rpx;
+}
+.board-item .content .inner{
+  display: flex;
+  flex-direction: row;
+  height:300rpx;
+  width:900rpx;
+}
+.board-item .content .inner .movie-item {
+  display: flex;
+  flex-direction: column;
+  width: 180rpx;
+  margin: 10rpx;
+}
+/* 电影图片 */
+.board-item .content .inner .movie-item image {
+  width: 180rpx;
+  height: 250rpx;
+}
+/* 电影标题 */
+.board-item .content .inner .movie-item text {
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;/*css规定段落中的文本不进行换行：*/
+  text-overflow: ellipsis;/*css规定当文本溢出包含元素时发生的事情。ellipsis	显示省略符号来代表被修剪的文本。*/
+}

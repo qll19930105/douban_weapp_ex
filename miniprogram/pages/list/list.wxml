@@ -1,0 +1,15 @@
+<!--pages/list/list.wxml-->
+<view wx:for="{{list}}" wx:key="index" class="movielist">
+  <navigator url="../item/item?id={{item.id}}" class="movie-item">
+    <image src="{{item.images.small}}" class="movie-img"></image>
+    <view class="center">
+      <text class="center-title">{{item.title}}</text>
+      <text class="center-subtitle">
+      {{item.original_title}}({{item.year}})</text>
+      <view class="center-directors">导演：<block wx:for="{{item.directors}}" wx:key="index"> {{item.name}} </block></view>
+    </view>
+    <view class="rating">
+      <text>{{item.rating.average}}</text>
+    </view>
+  </navigator>
+</view>
